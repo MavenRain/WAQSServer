@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>WAQSServer</Name>
+    <Description>WAQSServer Project Template</Description>
+    <Icon>WAQSServer.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>9cc712b8-f9c2-4ce7-a90e-3bc61130bf91</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>WAQSServer</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <CustomParameters>
+      <CustomParameter Name="$VSVersion$" Value="VS14" />
+      <CustomParameter Name="$NetVersion$" Value="NET46" />
+      <CustomParameter Name="$edmxName$" Value="WAQSModel" />
+    </CustomParameters>
+    <Project File="WAQSServerProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="WCFAsyncQueryableServices.VS14.NET46.Server.merge.ttinclude">WCFAsyncQueryableServices.VS14.NET46.Server.merge.ttinclude</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Server.tt">Server.tt</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Server.waqs">Server.waqs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="WAQSModel.edmx">WAQSModel.edmx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="WAQSModel.edmx.diagram">WAQSModel.edmx.diagram</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="MainViewModel.cs">MainViewModel.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Server.svc">Server.svc</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

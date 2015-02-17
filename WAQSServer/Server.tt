@@ -1,0 +1,4 @@
+﻿<#@ include file="WCFAsyncQueryableServices.VS14.NET46.Server.merge.ttinclude"#>
+<#
+WriteServer("Server.waqs", "$safeprojectname$");
+#>
